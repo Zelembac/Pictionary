@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Pictionary</h1></header>
+    <main>
+        <div id="winner"><div id="winnerBox"><div id="whoWon"></div><button id="try" class="popUpBtn">Try again</button></div></div>
+        <div id="choseName"><div id="choseNameBox"><h3>Chose Name</h3><input type="text" id="nameWriten"><button id="play" class="popUpBtn">Play</button></div></div>
+        <div id="choseWord"><div id="choseWordBox"></div></div> <div id="drawingSide"><canvas id="myCanvas"></canvas>
+            <div id="bottomDrawing">
+                <div id="timer"></div>
+                <div id="choiceBox">
+                    
+                    <button id="reset">Reset</button>
+                    <input type="color" name="colorRange" id="colorRange">
+                    <div class="colorChoices" style="background-color:red ;"></div>
+                    <div class="colorChoices" style="background-color: blue;"></div>
+                    <div class="colorChoices" style="background-color:yellow ;"></div>
+                    <div class="colorChoices" style="background-color: white;"></div>
+                    <input type="range" name="penSize" id="penSize" min="1" max="100">
+            
+                </div>
+            </div>
+          </div>
+     <div id="chatSide">
+        <div id="points"><h3>Points</h3></div>
+        <div id="chat"></div>
+        <form id="form"><input type="text" id="chatWrite" placeholder="Write guess"><input type="submit" value="Send" id="submitBtn"></form>
+     </div>
+    </main>
+    <footer>by Lazar Djurkovic</footer>
+    
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

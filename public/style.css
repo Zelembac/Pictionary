@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+
+}
+main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    background-color: darkslategray;
+   
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+   text-align: center;
+   padding: 0.4%;
+    background-color: cornflowerblue;
+
+}
+.disabled-state{
+    cursor: not-allowed;
+   pointer-events: none;
+
+}
+#choseWord{
+    display: none;  
+    left: 0;
+    top:0;
+    position: fixed;
+    z-index: 9000;
+    
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+    align-items: center;
+    justify-content: center;
+}
+#choseWordBox{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#choseName{
+    display: flex;  
+    left: 0;
+    top:0;
+    position: fixed;
+    z-index: 10000;
+    
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+    align-items: center;
+    justify-content: center;
+}
+#choseNameBox{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#nameWriten{
+    width: 40%;
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+}
+.popUpBtn{
+    background-color: darkcyan;
+    border-radius: 5px;
+    height: 10%;
+    width: 10%;
+}
+#winner{
+    display: none;  
+    left: 0;
+    top:0;
+    position: fixed;
+    z-index: 10000;
+   
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+    align-items: center;
+    justify-content: center;
+}
+#winnerBox{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#drawingSide{
+    height: 100%;
+    width: 80%;
+    
+    
+}
+#chatSide{
+    height: 100%;
+    width: 20%;
+    
+    
+}
+#points{
+    width: 100%;
+    height: 25%;
+    border: solid black 2px;
+    margin: 2.5% 0 2.5% 0;
+    text-align: center;
+    
+   
+}
+#points h3{
+    margin-bottom: 5%;
+}
+#chat{
+    border: solid black 2px;
+    width: 100%;
+    height: 60%;
+    padding: 3%;
+    overflow-y: scroll;
+    
+}
+::-webkit-scrollbar {
+    background-color: cornflowerblue;
+}
+
+ 
+::-webkit-scrollbar-thumb {
+    background: darkcyan;
+}
+#form{
+    height: 10%;
+    width: 100%;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+#chatWrite{
+    width: 80%;
+    height: 100%;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    
+}
+#submitBtn{
+    width: 20%;
+    height: 80%;
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+#myCanvas{
+    border: solid black 1px;
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+#timer{
+    height: 80%;
+    width: 10%;
+    border: solid black 2px;
+    font-size: large;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.3%;
+    background-color: darkcyan;
+}
+#bottomDrawing{
+    display: flex;
+    height: 8%;
+    align-items: center;
+    justify-content: center;
+}
+#choiceBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 70%;
+}
+#colorRange{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 5%;
+    background-color: aqua;
+}
+.colorChoices{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    border: solid black 1px;
+    border-radius: 20px;
+}
+#penSize{
+    color: aqua;
+}
+#reset{
+    width: 50px;
+    height: 30px;
+    margin: 0 15px;
+    background-color: darkcyan;
+    border-radius: 5px;
+    
+}
